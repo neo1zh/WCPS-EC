@@ -22,13 +22,13 @@ while True:
       sensor_data = (list(sensor_measurement)[-1])
     # print sensor_data
     sock=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-    server_address = ('172.16.11.89',8000) #IP address of Linux
+    server_address = ('127.0.0.1',8000) #IP address of Linux
     sock.connect(server_address)
-    sock.sendall(sensor_data)
+    sock.sendall(sensor_data.encode())
     control_command = sock.recv(30)
     if control_command:
       command_file = open('control_command.txt', 'w')              
-      command_file.write(control_command)
+      command_file.write(control_command.decode())
       command_file.close()
 
     sock.close()

@@ -1,7 +1,7 @@
 clear;
 clc;
 warning off;
-run('/Users/yehanspc/Codes/rvctools/startup_rvc.m');
+run("C:\Users\ASUS\AppData\Roaming\MathWorks\MATLAB Add-Ons\Toolboxes\Robotics Toolbox for MATLAB\lib\common\startup_rvc.m");
 % figure;
 iteration = 1;
 ft_size = 20;

@@ -9,7 +9,7 @@ import numpy
 import re
 from datetime import datetime
 from threading import Thread
-from SocketServer import ThreadingMixIn
+from socketserver import ThreadingMixIn
 
 round_counter = 1
 theta_ref = 0
