@@ -21,7 +21,7 @@ compu_latency = []
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # myself windows PC
-server_address = ('127.0.0.1', 8000)
+server_address = ('8.149.129.41', 8000)
 print('starting up on %s port %s' % server_address, file=sys.stderr)
 sock.bind(server_address)
 sock.listen(1)

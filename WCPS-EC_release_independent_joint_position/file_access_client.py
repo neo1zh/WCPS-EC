@@ -22,7 +22,7 @@ while True:
       sensor_data = (list(sensor_measurement)[-1])
     # print sensor_data
     sock=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-    server_address = ('127.0.0.1',8000) #IP address of Linux
+    server_address = ('8.149.129.41',8000) #IP address of Linux
     sock.connect(server_address)
     sock.sendall(sensor_data.encode())
     control_command = sock.recv(30)
